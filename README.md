@@ -92,9 +92,9 @@ Change `ACTIVE_SCENARIO` in `sketch.ino` to test the scenarios defined in the fi
 
 | Name | Roll No. | Contribution |
 |---|---|---|
-| Akshat Meena (Team Leader) | 125013023 | Documenting the report, guiding team members, developing the project idea, and working on the Wokwi simulation and circuit. |
-| Aniket Yadav | 1250103022 | Machine learning model, dataset generation, and backend development. |
-| Ayush Raj | 1250103006 | Machine learning model and backend development. |
+| Akshat Meena (Team Leader) | 125103023 | Documenting the report, guiding team members, developing the project idea, and working on the Wokwi simulation and circuit. |
+| Aniket Yadav | 125103022 | Machine learning model, dataset generation, and backend development. |
+| Ayush Raj | 125103006 | Machine learning model and backend development. |
 | Vedansh Singh Thakur | 125103021 | Future aspects and conclusion of the report. |
 | Gagandeep | 125103019 | Drawbacks, related work, existing projects, and dataset generation. |
 | Aditya Rana | 125103024 | Helped write the abstract and report sections covering implementation details, parameters used, and results tables; contributed to ideation and building the simulation. |
