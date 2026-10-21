@@ -102,7 +102,7 @@ def receive_data(data: SensorData):
 
     df=pd.concat([df, new_df], ignore_index=True)
 
-    df.to_csv(("/Users/aniketyadav/project(self)/preproceesing.py/rootsense_dataset_regenerated.csv"), index=False)
+    df.to_csv(("/Users/aniketyadav/project(self)/preproceesing.py/tomato.csv"), index=False)
 
     # returning the result
     return {
