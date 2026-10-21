@@ -1,1 +1,194 @@
+{
+  "version": 1,
+  "author": "krish meena",
+  "editor": "wokwi",
 
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": -4.76,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": -427,
+      "left": -193,
+      "attrs": {
+        "travelLength": "30",
+        "value": "205"
+      }
+    },
+
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": -119.8,
+      "left": -548.2,
+      "attrs": {
+        "travelLength": "30",
+        "value": "154"
+      }
+    },
+
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot3",
+      "top": 321.8,
+      "left": -567.4,
+      "attrs": {
+        "travelLength": "30",
+        "value": "512"
+      }
+    },
+
+    {
+      "type": "wokwi-clock-generator",
+      "id": "clk1",
+      "top": -48,
+      "left": 230.4,
+      "attrs": {
+        "frequency": "10"
+      }
+    }
+  ],
+
+  "connections": [
+    [
+      "esp:17",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+
+    [
+      "esp:16",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+
+    [
+      "pot1:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h9.6",
+        "v115.2"
+      ]
+    ],
+
+    [
+      "pot1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v67.2",
+        "h-119.6",
+        "v19.2"
+      ]
+    ],
+
+    [
+      "pot1:SIG",
+      "esp:34",
+      "green",
+      [
+        "h-38.4",
+        "v181.6"
+      ]
+    ],
+
+    [
+      "pot2:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h0",
+        "v-86.4",
+        "h-86.4"
+      ]
+    ],
+
+    [
+      "pot2:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v307.2",
+        "h-350",
+        "v-76.8"
+      ]
+    ],
+
+    [
+      "pot2:SIG",
+      "esp:35",
+      "green",
+      [
+        "h-28.8",
+        "v-135.2",
+        "h-124.8",
+        "v268.8"
+      ]
+    ],
+
+    [
+      "pot3:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h-297.6",
+        "v-604.8",
+        "h1017.6",
+        "v268.8",
+        "h-9.6"
+      ]
+    ],
+
+    [
+      "pot3:SIG",
+      "esp:32",
+      "green",
+      [
+        "h-115.2",
+        "v143.2",
+        "h480",
+        "v-441.6"
+      ]
+    ],
+
+    [
+      "pot3:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v-28.8",
+        "h254.8",
+        "v-182.4"
+      ]
+    ],
+
+    [
+      "clk1:CLK",
+      "esp:27",
+      "green",
+      [
+        "v441.6",
+        "h-326.4",
+        "v0",
+        "h-28.8",
+        "v-134.4"
+      ]
+    ]
+  ],
+
+  "serialMonitor": {
+    "display": "plotter"
+  },
+
+  "dependencies": {}
+}
